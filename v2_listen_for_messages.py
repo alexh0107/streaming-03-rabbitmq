@@ -3,7 +3,7 @@
 Always customize this docstring. 
 
 Add your name, date, and a description of the program.
-
+Alex Hurtado, 1-31-23, listening for messages, again.
 Listens for messages on the queue.
 This process runs continously. 
 
@@ -43,7 +43,7 @@ def main(hn: str = "localhost"):
     try:
         # try this code, if it works, keep going  
         # create a blocking connection to the RabbitMQ server
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host=hn))
+        connection = pika.BlockingConnection(pika.ConnectionParameters('LocalHost'))
 
     # except, if there's an error, do this
     except Exception as e:

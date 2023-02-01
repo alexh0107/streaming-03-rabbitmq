@@ -3,7 +3,7 @@
 Always customize this docstring. 
 
 Add your name, date, and a description of the program.
-
+Alex Hurtado, 1-31-23, listening for messages.
 Listens for messages on the queue.
 This process runs continously. 
 
@@ -34,7 +34,7 @@ import pika, sys, os
 # define a main function to run the program
 def main():
     # create a blocking connection to the RabbitMQ server
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='LocalHostt'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='LocalHost'))
     # use the connection to create a communication channel
     channel = connection.channel()
     # use the channel to declare a queue
@@ -43,7 +43,7 @@ def main():
     def callback(ch, method, properties, body):
         print(" [x] Received %r" % body.decode())
     # use the channel to consume messages from the queue
-    channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+    channel.basic_consume(queue='hello', auto_ack=True, on_message_callback=callback)
     # print a message to the console for the user
     print(' [*] Waiting for messages. To exit press CTRL+C')
     # start consuming messages

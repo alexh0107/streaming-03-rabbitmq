@@ -38,7 +38,7 @@ Once it runs and finishes, we can reuse the terminal.
 1. Run the file.
 
 You'll need to fix an error in the program to get it to run.
-Once it runs successfully, will it terminate on its own? How do you know? 
+Once it runs successfully, will it terminate on its own? How do you know? No because you have to use the keyboard command ctrl+c
 As long as the process is running, we cannot use this terminal for other commands. 
 
 ## Version 1 - Open a New Terminal / Emit More Messages
@@ -78,13 +78,13 @@ Each of the version 2 programs include an error as well.
 1. Imports always go at the top, just after the file docstring.
 1. Imports should be one per line - why?
 1. Then, define your functions.
-1. Functions are reuable logic blocks.
+1. Functions are resuable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
+1. Which of the 4 files will always close() the connection? v1_emit_message.py and v2_emit_message.py
 1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
+1. How many hits did you get? 32M in Code, 2M in Commits, 88K in issues, 1K in Discussions and 5K in Wikis
 1. Learn and understand this common Python idiom.
 
 ## Reference
@@ -94,4 +94,4 @@ Each of the version 2 programs include an error as well.
 
 ## Multiple Terminals
 
-![Mac Example](screenshot.png)
+(![Multiple Terminals](A3-Screenshot.png))
